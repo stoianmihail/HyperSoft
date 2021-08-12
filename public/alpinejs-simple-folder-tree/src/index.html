@@ -1,0 +1,13 @@
+<div class="min-w-screen min-h-screen bg-gray-200 flex justify-center items-start px-5 py-5">
+    <div class="rounded shadow-xl w-full bg-white p-5 text-gray-700" style="max-width:900px">
+        <h1 class="text-3xl font-semibold leading-tight text-indigo-500">Alpine.js</h1>
+        <hr class="my-5 -mx-5">
+        <div class="-mx-5" x-data="fileTree()">
+            <ul>
+                <template x-for="(level,i) in levels">
+                    <li x-html="renderLevel(level,i)"></li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</div>

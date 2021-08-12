@@ -1,0 +1,64 @@
+:root {
+  --default:  #3f51b5;
+  --hover:    #2196f3;
+  --size:     50px;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+  
+  .size {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: var(--size);
+    transition: border-color .2s ease-in-out;
+  }
+}
+
+.down {
+  border-top: var(--size) solid var(--default);
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  
+  &:hover,
+  &:focus {
+    border-top-color: var(--hover);
+  }
+}
+
+.up {
+  border-bottom: var(--size) solid var(--default);
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  
+  &:hover,
+  &:focus {
+    border-bottom-color: var(--hover);
+  }
+}
+
+.left {
+  border-right: var(--size) solid var(--default);
+  border-top: var(--size) solid transparent;
+  border-bottom: var(--size) solid transparent;
+  
+  &:hover,
+  &:focus {
+    border-right-color: var(--hover);
+  }
+}
+
+.right {
+  border-left: var(--size) solid var(--default);
+  border-top: var(--size) solid transparent;
+  border-bottom: var(--size) solid transparent;
+  
+  &:hover,
+  &:focus {
+    border-left-color: var(--hover);
+  }
+}

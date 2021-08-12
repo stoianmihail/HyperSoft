@@ -1,0 +1,82 @@
+/* The version of Bourbon used in this Pen was 4.* */
+@import "bourbon";
+
+$color-blue: #2D86F7;
+$color-green: #86bb00;
+$color-orange: #ed9c00;
+
+html,
+body {
+  color: #454545;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+div {
+  margin: 0 auto;
+  display: table;
+}
+
+ul {
+  margin: rem(20) 0;
+}
+
+li {
+  width: rem(80);
+  height: rem(50);
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+}
+// Code to this point for presentation only
+
+// Arrow code starts here
+i[class*="arrow"] {
+  display: inline-block;
+  width: rem(16);
+  height: rem(16);
+  border: rem(2) solid;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 1px;
+  text-indent: rem(-9999);
+  
+  &[class*="-blue"] {
+    border-color: $color-blue;
+  }
+  
+  &[class*="-green"] {
+    border-color: $color-green;
+  }
+  
+  &[class*="-orange"] {
+    border-color: $color-orange;
+  } 
+  
+  &[class*="-up"] {
+    @include transform(rotate(-45deg));
+  }
+  
+  &[class*="-right"] {
+    @include transform(rotate(45deg));
+  } 
+  
+  &[class*="-down"] {
+    @include transform(rotate(135deg));
+  } 
+  
+  &[class*="-left"] {
+    @include transform(rotate(225deg));
+  } 
+  
+  &[class*="-heavy"] {
+    border-width: rem(4);
+  }
+  
+  &[class*="-sm"] {
+    width: rem(8);
+    height: rem(8);
+  }  
+}
