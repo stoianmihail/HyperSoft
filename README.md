@@ -1,2 +1,2 @@
 # HyperSoft
-HyperSoft: Customized Solutions for Your Company
+HyperSoft: Custom Solutions for Your Company
